@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header{
+    height: 10vh;
+    background-color: #0f0f0f;
+}
+header nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #969696;
+}
+.main{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+main{
+    height: 90vh;
+    background-image: url(./images/Rectangle\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.centertocenter{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.ramka{
+    width: 320px;
+    height: 320px;
+    border: 4px solid white;
+    margin-bottom: 80px;
+}
+.main .centertocenter > p{
+    width: 720px;
+    text-align: center;
+}
+.ramka img{
+    border-bottom: 2px solid wheat;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.ramka p{
+    font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+}
+.colection{
+    background-color: black;
+    color: wheat;
+}
+.top{
+    height: 70vh;
+    display: flex;
+}
+.top .left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 80px;
+    align-items: center;
+}
+.top .right{
+    width: 45%;
+    background-image: url(./images/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 100px;
+    align-items: center;
+}
+.chasyky{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.black{
+    background-color: #000000;
+    height: 30px;
+    
+}
+.cube{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+header .cube{
+    display: flex;
+    justify-content: space-between;
+}
+.top .right hr{
+    margin: 30px 0;
+}
+.bottom{
+    height: 70vh;
+    display: flex;
+    
+}
+.bottom .left{
+background-image: url(./images/Rectangle\ 9.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 45%;
+}
+.bottom .right{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+.bottom .right p{
+    text-align: center;
+    width: 470px;
+}
+.top .right button{
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+.bottom .right button{
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.admission{
+    background-color: #000000;
+    height: 100vh;
+    color: white;
+}
+.admission .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.brandss{
+    background-color: #0f0f0f;
+    color: white;
+}
+.brandss hr{
+    margin: 40px;
+}
+.brandss .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+}
+.magazine{
+    background-image: url(./images/Rectangle\ 15.png);
+    color: white;
+    
+}
+.magazine .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+.magazine .centerr button{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer a{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rightt button{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+#burger{
+    width: 25px;
+    display: none;
+}
+@media (max-width: 576px){
+    header .container nav{
+        display: none;
+    }
+    #burger{
+        display: block;
+    }
+    .container {
+        width: 90%;
+    }
+    .main .centertocenter > p {
+        width: 80%;
+    }
+    .colection .top, .bottom{
+    height: fit-content;
+    flex-direction: column;
+    }
+    .colection .top .left{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .top .left hr{
+        margin: 30px;
+    }
+    .colection .top .left .chasyky{
+        flex-direction: column;
+        align-items: center;
+    }
+    .colection .top .right{
+        height: 40vh;
+    }
+    .top .chasy{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .top .right{
+        width: 100%;
+        height: 70vh;
+    }
+    .bottom .left, .bottom .right{
+        width: 100%;
+        height: 70vh;
+    }
+    .colection .bottom .right i{
+        width: 80%;
+        text-align: center;
+    }
+    .colection .bottom .left{
+        order: 1;
+    }
+    .admission{
+        height: fit-content;
+        padding: 60px 0;
+    }
+    .black{
+        display: none;
+    }
+    .colection .top .left .chasy{
+        margin-bottom: 30px;
+    }
+    .chasyky{
+        flex-direction: column;
+        align-items: center;
+    }
+    .magazine .container {
+        flex-direction: column;
+        height: 50vh;
+    }
+    .brands {
+        flex-direction: column;
+    }
+}
